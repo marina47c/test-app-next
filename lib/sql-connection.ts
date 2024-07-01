@@ -3,24 +3,22 @@ import sql from 'mssql'
 
 // connection configs
 const config = {
-  user: 'username',
-  password: 'password',
   server: 'localhost',
-  database: 'DATABASE_NAME',
-  port: 1433,
+  database: 'posts.db',
   options: {
-    instancename: 'SQLEXPRESS',
+    instancename: 'MarinaPC\\SQLEXPRESS',
     trustedconnection: true,
     trustServerCertificate: true,
   },
 }
 
-export default async function executeQuery(query, options) {
+async function connectToDatabase() {
   try {
-    let pool = await sql.connect(config);
-    let result = await pool.request().query(query);
-    return result.recordsets;
+    await sql.connect(config);
+    console.log('Connected to SQL Server Express');
   } catch (error) {
-    console.log(error);
+    console.error('Error connecting to SQL Server Express:', error.message);
   }
 }
+
+connectToDatabase();
