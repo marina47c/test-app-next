@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import classes from './post-item.module.css';
 
 const PostItem = ({ title, slug, image, summary }) => {

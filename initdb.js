@@ -64,32 +64,6 @@ const dummyPosts = [
       𝐂𝐢𝐣𝐞𝐧𝐚 - 𝟐 €/𝐤𝐠.
  `,
    },
-   {
-      title: 'Narudžbe za meso',
-      slug: 'meso',
-      image: '/images/meso.jpg',
-      summary:
-         'Primam narudžbe za meso.',
-      description: `
-     Primam naruzbe za meso
-      Junece meso mjesano 8 e kg 
-      Cisti juneci snicli 11 e kg
-      Kosti za juhu 1.5 e kg 
-      Cevapi 8 e kg
-      Pljeske 8 e kg 
-      Ramstek 8.5 e kg 
-      Vrat juneci 8 e kg
-      Rebra/prsa 7.6 e kg
-      Pecenice domace 8 e kg 
-      Jeger 7 e kg 
-      Tirolka 7.5 
-      Parizer 7 e kg
-      Hrenovke 10 e kg
-      Kobase domace 8 e kg
-      Kranjska 7 e kg
-      Meso za rostilj napacano 6.5 e kg
-    `,
-   },
 ];
 
 db.prepare(`
