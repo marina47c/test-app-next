@@ -16,7 +16,7 @@ const PostItem = ({ title, slug, image, summary }) => {
           <div className={classes.content}>
             <p className={classes.summary}>{summary}</p>
             <div className={classes.actions}>
-              <Link href={`/posts/${slug}`}>View Details</Link>
+              <Link href={`/posts/${slug}`}>Više</Link>
             </div>
           </div>
         </article>
